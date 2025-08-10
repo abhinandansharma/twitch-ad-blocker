@@ -1,0 +1,55 @@
+{
+    "manifest_version": 3,
+    "name": "Twitch Ad Blocker",
+    "version": "1.0",
+    "description": "Watch Twitch the way it was meant to be — no ads, just pure uninterrupted streams.",
+    "permissions": [
+        "proxy",
+        "storage",
+        "scripting",
+        "tabs"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Twitch Ad Blocker",
+        "default_icon": {
+            "16": "icon16.png",
+            "48": "icon48.png",
+            "128": "icon128.png"
+        }
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "host_permissions": [
+        "*://*.twitch.tv/*",
+        "*://usher.ttvnw.net/*",
+        "*://gql.twitch.tv/*",
+        "*://*.ttvnw.net/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.twitch.tv/*"
+            ],
+            "js": [
+                "content_script.js"
+            ],
+            "run_at": "document_start",
+            "all_frames": true
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}

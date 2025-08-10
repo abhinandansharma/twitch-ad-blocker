@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Twitch Ad Blocker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            width: 250px;
+            padding: 15px;
+            background: #18181b;
+            color: white;
+        }
+
+        h1 {
+            font-size: 18px;
+            color: #a970ff;
+        }
+
+        #toggleButton {
+            padding: 10px 20px;
+            font-size: 14px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        #toggleButton.active {
+            background: #ff4747;
+            color: white;
+        }
+
+        #toggleButton.inactive {
+            background: #4caf50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Twitch Ad Blocker</h1>
+    <button id="toggleButton" class="active">Disable Ad Blocker</button>
+    <p style="font-size:12px; opacity:0.7;">Block Twitch ads using proxy rules</p>
+    <script src="popup.js"></script>
+</body>
+
+</html>
