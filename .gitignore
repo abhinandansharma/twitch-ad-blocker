@@ -1,0 +1,18 @@
+# macOS junk
+.DS_Store
+
+# Node dependencies (if you install any for tooling)
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build artifacts
+dist/
+build/
+
+# Env files (if you add API keys for testing)
+.env
+.env.local
