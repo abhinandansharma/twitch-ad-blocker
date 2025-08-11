@@ -54,30 +54,6 @@ This method avoids the usual "purple screen" problem and works consistently.
 }
 ```
 
----
-
-## 🎨 Visuals
-
-```
-   ██████████
-  ██░░░░░░░░██
- ██░░░░░░░░░░██
- ██░░██░░██░░██   🎮
- ██░░░░░░░░░░██
-  ██░░░░░░░░██
-   ██████████
-```
-
-Pixel art Twitch-style TV icon — because who doesn’t like retro pixels?
-
----
-
-## ⚠️ Disclaimer
-This extension is for **educational purposes only**.  
-Using it may violate Twitch’s Terms of Service. Use at your own risk.
-
----
-
 ## 📜 License
 MIT License — you can use, modify, and distribute freely, but attribution is appreciated.
 
